@@ -24,7 +24,7 @@ img {
 }
 header{
     margin: 0;
-    background-image:url(../img/pikachu.png);
+    background-image:url(./pikachu.png);
     height: 80vh;
     background-repeat: no-repeat;
     display: flex;
@@ -189,6 +189,6 @@ section img{
 /* FOOTER */
 footer{
     height: 20rem;
-    background: url(../img/ondafooter.png);
+    background: url(./ondafooter.png);
 }
 
