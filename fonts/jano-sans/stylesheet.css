@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Medium.eot');
+    src: local('Jano Sans Pro Medium'), local('JanoSansPro-Medium'),
+        url('JanoSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Medium.woff2') format('woff2'),
+        url('JanoSansPro-Medium.woff') format('woff'),
+        url('JanoSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-SemiBold.eot');
+    src: local('Jano Sans Pro SemiBold'), local('JanoSansPro-SemiBold'),
+        url('JanoSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-SemiBold.woff2') format('woff2'),
+        url('JanoSansPro-SemiBold.woff') format('woff'),
+        url('JanoSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-ExtraLightItalic.eot');
+    src: local('Jano Sans Pro ExtraLight Italic'), local('JanoSansPro-ExtraLightItalic'),
+        url('JanoSansPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-ExtraLightItalic.woff2') format('woff2'),
+        url('JanoSansPro-ExtraLightItalic.woff') format('woff'),
+        url('JanoSansPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-SemiBoldItalic.eot');
+    src: local('Jano Sans Pro SemiBold Italic'), local('JanoSansPro-SemiBoldItalic'),
+        url('JanoSansPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-SemiBoldItalic.woff2') format('woff2'),
+        url('JanoSansPro-SemiBoldItalic.woff') format('woff'),
+        url('JanoSansPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-BlackItalic.eot');
+    src: local('Jano Sans Pro Black Italic'), local('JanoSansPro-BlackItalic'),
+        url('JanoSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-BlackItalic.woff2') format('woff2'),
+        url('JanoSansPro-BlackItalic.woff') format('woff'),
+        url('JanoSansPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Thin.eot');
+    src: local('Jano Sans Pro Thin'), local('JanoSansPro-Thin'),
+        url('JanoSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Thin.woff2') format('woff2'),
+        url('JanoSansPro-Thin.woff') format('woff'),
+        url('JanoSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Extrabold.eot');
+    src: local('Jano Sans Pro Extrabold'), local('JanoSansPro-Extrabold'),
+        url('JanoSansPro-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Extrabold.woff2') format('woff2'),
+        url('JanoSansPro-Extrabold.woff') format('woff'),
+        url('JanoSansPro-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-MediumItalic.eot');
+    src: local('Jano Sans Pro Medium Italic'), local('JanoSansPro-MediumItalic'),
+        url('JanoSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-MediumItalic.woff2') format('woff2'),
+        url('JanoSansPro-MediumItalic.woff') format('woff'),
+        url('JanoSansPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-ThinItalic.eot');
+    src: local('Jano Sans Pro Thin Italic'), local('JanoSansPro-ThinItalic'),
+        url('JanoSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-ThinItalic.woff2') format('woff2'),
+        url('JanoSansPro-ThinItalic.woff') format('woff'),
+        url('JanoSansPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-LightItalic.eot');
+    src: local('Jano Sans Pro Light Italic'), local('JanoSansPro-LightItalic'),
+        url('JanoSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-LightItalic.woff2') format('woff2'),
+        url('JanoSansPro-LightItalic.woff') format('woff'),
+        url('JanoSansPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Black.eot');
+    src: local('Jano Sans Pro Black'), local('JanoSansPro-Black'),
+        url('JanoSansPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Black.woff2') format('woff2'),
+        url('JanoSansPro-Black.woff') format('woff'),
+        url('JanoSansPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Regular.eot');
+    src: local('Jano Sans Pro Regular'), local('JanoSansPro-Regular'),
+        url('JanoSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Regular.woff2') format('woff2'),
+        url('JanoSansPro-Regular.woff') format('woff'),
+        url('JanoSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-RegularItalic.eot');
+    src: local('Jano Sans Pro Regular Italic'), local('JanoSansPro-RegularItalic'),
+        url('JanoSansPro-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-RegularItalic.woff2') format('woff2'),
+        url('JanoSansPro-RegularItalic.woff') format('woff'),
+        url('JanoSansPro-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Light.eot');
+    src: local('Jano Sans Pro Light'), local('JanoSansPro-Light'),
+        url('JanoSansPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Light.woff2') format('woff2'),
+        url('JanoSansPro-Light.woff') format('woff'),
+        url('JanoSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-BoldItalic.eot');
+    src: local('Jano Sans Pro Bold Italic'), local('JanoSansPro-BoldItalic'),
+        url('JanoSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-BoldItalic.woff2') format('woff2'),
+        url('JanoSansPro-BoldItalic.woff') format('woff'),
+        url('JanoSansPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-ExtraboldItalic.eot');
+    src: local('Jano Sans Pro Extrabold Italic'), local('JanoSansPro-ExtraboldItalic'),
+        url('JanoSansPro-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-ExtraboldItalic.woff2') format('woff2'),
+        url('JanoSansPro-ExtraboldItalic.woff') format('woff'),
+        url('JanoSansPro-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-ExtraLight.eot');
+    src: local('Jano Sans Pro ExtraLight'), local('JanoSansPro-ExtraLight'),
+        url('JanoSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-ExtraLight.woff2') format('woff2'),
+        url('JanoSansPro-ExtraLight.woff') format('woff'),
+        url('JanoSansPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jano Sans Pro';
+    src: url('JanoSansPro-Bold.eot');
+    src: local('Jano Sans Pro Bold'), local('JanoSansPro-Bold'),
+        url('JanoSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('JanoSansPro-Bold.woff2') format('woff2'),
+        url('JanoSansPro-Bold.woff') format('woff'),
+        url('JanoSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

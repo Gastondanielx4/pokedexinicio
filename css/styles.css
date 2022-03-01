@@ -1,0 +1,206 @@
+:root {
+    --main-font: 'Jano Sans Pro';
+    --font-size: 16px;
+    --main-color: #f7df1e;
+    --second-color: #222;
+    --main-modal-color: rgba(247, 222, 30, 0.85);
+    --second-modal-color: rgba(34, 34, 34, 0.85);
+    --container-width: 1200px;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    font-family: var(--main-font) ;
+    font-style: normal;
+    text-align: center;
+    transition: all 1s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    margin: 0;
+    background-image:url(/Pokemon/img/pikachu.png);
+    height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+/* TEXTO DE BIENVENIDA */
+.title-welcome{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.text-welcome{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.title-text-welcome button{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-style: none ;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #1394c4, #30e0ba);
+    /* #2eccab */
+}
+.title-text-welcome button:hover{
+    cursor: pointer;
+    background: linear-gradient(30deg, #1394c4, #30e0ba)
+}
+@media screen and (max-width: 1144px) {
+    header{
+        justify-content: center;
+    }
+}
+
+
+/* HEADER FIJO */
+.static-nav{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    font-family: 'Jano Sans Pro';
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+   
+}
+.is-active{
+    transition: all 1s ease;
+    background-color: whitesmoke;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.63)
+}
+.icon-page{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.icon-page img{
+    height: 3rem;
+    margin-right: 1rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: #222;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+nav ul a:hover{
+    font-weight: 700;
+    transition: all 3s;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+main{
+    margin: auto;
+    width: 80%;
+}
+main h1{
+    font-size: 2.5rem;
+}
+section img{
+    height: 3rem;
+    margin: auto
+    ;
+}
+.section1,
+.section3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.section2{
+    display: flex;
+}
+.title-section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.title-section p{
+    line-height: 3rem;
+    color: rgb(119, 119, 119);
+    font-weight: 500;
+}
+.icon-year{
+    display: flex;
+    justify-content: center;
+    margin: auto 2rem auto 0;
+}
+.section1 h2{
+    color: #5bdab4;
+}
+.section1 .icon-year p{
+    color: #5bdab4;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.section1 .icon-year{
+    border-left: solid 5px #5bdab4 ;
+    padding: 2rem;
+}
+.section2 h2{
+    color: #da1e58;
+}
+.section2 .icon-year p{
+    color: #da1e58 ;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.section2 .icon-year{
+    border-right: solid 5px #da1e58 ;
+    padding: 2rem;
+}
+.section3 h2{
+    color: #f5e400;
+}
+.section3 .icon-year p{
+    color: #f5e400;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.section3 .icon-year{
+    border-left: solid 5px #f5e400 ;
+    padding: 2rem;
+}
+
+/* FOOTER */
+footer{
+    height: 20rem;
+    background: url(/Pokemon/img/ondafooter.png);
+}
+
