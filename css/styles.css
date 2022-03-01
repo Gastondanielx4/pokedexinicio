@@ -35,7 +35,7 @@ img {
 
 header{
     margin: 0;
-    background-image:url(/Pokemon/img/pikachu.png);
+    background-image:url(../img/pikachu.png);
     height: 80vh;
     background-repeat: no-repeat;
     display: flex;
