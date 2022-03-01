@@ -1,4 +1,5 @@
-import colorearHeader from "/Pokemon/js/color_header.js";
+import colorearHeader from "./color_header.js";
+
 
 
 let d = document,
