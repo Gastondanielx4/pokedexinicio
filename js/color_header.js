@@ -10,10 +10,10 @@ export default function colorearHeader (header){
         let scrollTop = w.pageYOffset || d.documentElement.scrollTop;
 
         if(scrollTop > 100) {
-            $header.classList.add("is-active")
+            $header.classList.add("is-active-nav")
 
         }else{
-            $header.classList.remove("is-active")
+            $header.classList.remove("is-active-nav")
         }
     });
 } 
