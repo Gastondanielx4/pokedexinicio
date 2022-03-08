@@ -193,7 +193,6 @@ body h1{
     }
 }
 
-
 /* MOCKUPS */
 .contenedor{
     margin:auto;
@@ -247,7 +246,7 @@ body h1{
     background-color: whitesmoke;
     color: #1394c4;
 }
-.filter{
+.col.filter{
     /* display: none; */
     visibility: hidden;
     opacity: 0;
@@ -256,7 +255,7 @@ body h1{
 #divCards{
     transition: all 1s ease-in-out;
 }
-@media screen and (max-width: 1216px) {
+@media screen and (max-width: 880px) {
     #divCards{
         display: flex;
         flex-direction: column;

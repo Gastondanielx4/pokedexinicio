@@ -1,5 +1,4 @@
-let d = document,
-    ls= localStorage;
+let d = document;
 
 export default function searchFilters (input, selectorCards, btnSelector){
     console.log(document)
@@ -23,7 +22,6 @@ export default function searchFilters (input, selectorCards, btnSelector){
             });
         }
     });
-
     /* PARA QUE BUSQUE SIN APRETAR EL BOTON SEARCH */
     /* d.addEventListener("keyup", e => {
         if (e.target.matches(input)) {
