@@ -62,6 +62,5 @@ export default function getData () {
                 </div>`;
             divPrincipal.innerHTML += crearHTML;
         })  
-        
     }
 }
