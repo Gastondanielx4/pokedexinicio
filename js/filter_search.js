@@ -1,6 +1,9 @@
-let d = document;
+let d = document,
+    ls= localStorage;
 
 export default function searchFilters (input, selectorCards, btnSelector){
+    console.log(document)
+    console.log(window)
     d.addEventListener("click", eClick => {
         if (eClick.target.matches(btnSelector)){     
             let valueSearch = d.querySelector(input).value;            

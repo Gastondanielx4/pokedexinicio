@@ -13,8 +13,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
     colorearHeader("headerStatic");
     hamburgerMenu(".panel-btn","#nav", "#nav a");
     getData();
-    buttonFavs(".favButton","remove");
-    searchFilters(".card-filter", ".col", ".searchButton")
+    searchFilters(".card-filter", ".col", ".searchButton");
 });
+
+buttonFavs(".favButton","remove");
 
 

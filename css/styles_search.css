@@ -196,7 +196,7 @@ body h1{
 
 /* MOCKUPS */
 .contenedor{
-    margin: 2rem auto;
+    margin:auto;
     display: flex;
     justify-content: center;
     top: 8rem;
@@ -238,14 +238,17 @@ body h1{
     cursor: pointer;
     background: linear-gradient(30deg, #1394c4, #30e0ba)
 }
+.favButton.none{
+    display:  none ;
+}
 /* btn-REMOVE */
 .favButton.remove{
     background: none;
     background-color: whitesmoke;
     color: #1394c4;
 }
-.col.filter{
-    display: none;
+.filter{
+    /* display: none; */
     visibility: hidden;
     opacity: 0;
     order: 1;

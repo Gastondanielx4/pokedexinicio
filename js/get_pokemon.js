@@ -51,14 +51,14 @@ export default function getData () {
             let crearHTML = "";
                 crearHTML = `
                 <div id="card${pokemonId}" class="col">
-                    <div class="card text-center" style=" height:15rem; width: 18rem; padding-top: 1rem; align-items: center;">
-                        <img src="${avatar}" class="card-img-top" alt="..." style="border-radius: 100%; width: 7rem">
-                        <div class="card-body">
-                            <h5 class="card-title">${namePokemon}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">${types}</h6>
-                            <button id="favButton${pokemonId}" class="favButton">Add to favs</button>
+                        <div class="card text-center" style=" height:15rem; width: 18rem; padding-top: 1rem; align-items: center;">
+                            <img src="${avatar}" class="card-img-top" alt="..." style="border-radius: 100%; width: 7rem">
+                            <div class="card-body">
+                                <h5 class="card-title">${namePokemon}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">${types}</h6>
+                                <button id="favButton${pokemonId}" class="favButton none">Add to favs</button>
+                            </div>
                         </div>
-                    </div>
                 </div>`;
             divPrincipal.innerHTML += crearHTML;
         })  
