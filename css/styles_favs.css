@@ -5,3 +5,6 @@
 .searchButton{
     display: none;
 }
+.contenedor.none{
+    visibility: hidden;
+}

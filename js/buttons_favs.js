@@ -1,51 +1,69 @@
 const d = document,
     ls = localStorage;
 
-export default function buttonFavs (btn, classRemove){                
+export default function buttonFavs (classBtn, classRemove){                
     let fav = "Add to favs",
         remove = "Remove";
+    
+    let arrayFavs = [];
+
+    function favorito (btn, status) {
+        this.btn = btn;
+        this.status = status;
+    }
+    /* CUANDO AGREGO AL FAVORITO, EL TEXT CONTENT TIENE QUE SER IGUAL A REMOVE */
     const btnAddToFav = (btnId) => {
         let $btnId = d.getElementById(btnId);
         $btnId.classList.add(classRemove);
         $btnId.textContent = remove;
+        
+        let newFav = new favorito(btnId, remove);
+        arrayFavs.push(newFav)
+        ls.setItem('favList', JSON.stringify(arrayFavs))
     };
+    /* CUANDO ELIMINO AL FAVORITO, EL TEXT CONTENT TIENE QUE SER IGUAL A ADD TO FAVS */
     const btnRemove = (btnId) => {
         let $btnId = d.getElementById(btnId);
         $btnId.classList.remove(classRemove);
         $btnId.textContent = fav;
+
+        let index = arrayFavs.map(el => el.btn).indexOf(`${btnId}`)
+        arrayFavs.splice(index, 1);
+        ls.setItem('favList', JSON.stringify(arrayFavs))
     };
 
     d.addEventListener("DOMContentLoaded", e=> {
+        setTimeout(() => {/* PARA QUE AL CARGAR EL DOCUMENTO SE AGREGEN LOS FAVORITOS ANTERIORES */
+            let $butonsID = d.querySelectorAll(classBtn),
+                favButtonId= "",
+                storedFavList = ls.getItem('favList'),
+                favListParseada = JSON.parse(storedFavList);
+
+            $butonsID.forEach(element => {
+                    favButtonId = (element.id);
+                    favListParseada.forEach(el => {
+                        if (el.btn === favButtonId) btnAddToFav (favButtonId);
+                    });                                 
+            });
+        }, 400);
+        
         setTimeout(() => {
-            let $wathButtons = d.querySelectorAll(btn).length;
-            //console.log($wathButtons);
-            for (let btnId = 1; btnId <= $wathButtons; btnId ++) {
-                let favButtonId = `favButton${btnId}`;
-                //console.log(favButtonId);
-                if(ls.getItem(favButtonId) === "fav") btnAddToFav (favButtonId);
-            }
-        }, 600);
-        setTimeout(() => {
-            let $buttons = d.querySelectorAll(btn);
+            let $buttons = d.querySelectorAll(classBtn);
             $buttons.forEach(element => {
                 element.classList.remove("none")
             });
-        }, 700);
+        }, 500);
     } );
 
     d.addEventListener("click", e => {
-        if (e.target.matches(btn)){
+        if (e.target.matches(classBtn)){
             if(e.target.textContent === fav){
                 let btnPushId = e.target.id;
-                ls.setItem(`${btnPushId}`, "fav");
                 btnAddToFav(btnPushId);
-                console.log(btnPushId);
             }
             else{
                 let btnPushId = e.target.id;
                 btnRemove(btnPushId);
-                ls.setItem(`${btnPushId}`, "remove");
-                ls.removeItem(btnPushId);
             }
         }
     });
