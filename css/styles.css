@@ -81,7 +81,7 @@ header{
     padding: 0 3rem;
    
 }
-.is-active{
+.is-active-nav{
     transition: all 1s ease;
     background-color: whitesmoke;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.63)
