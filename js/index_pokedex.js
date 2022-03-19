@@ -14,5 +14,5 @@ d.addEventListener("DOMContentLoaded", (e) => {
     getData();
     searchFilters(".card-filter", ".col", ".searchButton");
     responsiveMedia("divCards", "(max-width: 1216px)")
+    buttonFavs(".favButton","remove");
 });
-buttonFavs(".favButton","remove");

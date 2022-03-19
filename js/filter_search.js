@@ -20,19 +20,4 @@ export default function searchFilters (input, selectorCards, btnSelector){
             });
         }
     });
-    /* PARA QUE BUSQUE SIN APRETAR EL BOTON SEARCH */
-    /* d.addEventListener("keyup", e => {
-        if (e.target.matches(input)) {
-            console.log(e.key);
-            
-            if(e.key === "Escape")e.target.value = "";
-                //console.log(e.target.value);
-            d.querySelectorAll(selector1).forEach(el => {
-                el.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-                ? el.classList.remove("filter")
-                :el.classList.add("filter");     
-                //console.log(el);           
-            });                    
-        }
-    }) */
 }
